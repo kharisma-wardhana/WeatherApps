@@ -1,5 +1,6 @@
-import '../components/weather_list.js';
-import '../components/search-bar.js';
+import '../components/weather-list/index.js';
+import '../components/search-bar/index.js';
+import '../components/loading-bar/index.js';
 import WeatherData from '../data/weatherData.js';
 
 const main = () => {
@@ -8,9 +9,12 @@ const main = () => {
 
   const onButtonSearchClicked = async () => {
     try {
+      if (searchElement.value === undefined || searchElement.value === null || searchElement.value === '') {
+        return fallbackResult('Silahkan masukkan nama provinsi');
+      }
       const result = await WeatherData.searchData(searchElement.value);
-      //   renderResult(result);
-      console.log(result);
+      // console.log(result);
+      renderResult(result);
     } catch (message) {
       fallbackResult(message);
     }
