@@ -22,7 +22,8 @@
     "xml2js": "^0.4.22"
   },
   "devDependencies": {
-    "firebase-functions-test": "^0.1.6"
+    "firebase-functions-test": "^0.1.6",
+    "elliptic": ">=6.5.3"
   },
   "private": true
 }
