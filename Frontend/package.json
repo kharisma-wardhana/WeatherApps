@@ -43,7 +43,7 @@
     "bootstrap": "^4.4.1",
     "ionicons": "^5.0.1",
     "jquery": "^3.5.0",
-    "moment": "^2.25.3",
+    "moment": "^2.29.4",
     "regenerator-runtime": "^0.13.5",
     "xml-js": "^1.6.11"
   }
